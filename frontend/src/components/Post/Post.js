@@ -29,7 +29,7 @@ export class Post extends Component {
             return true
         }
 
-        return !!this.state.disabledDays.find(item => { return item.getTime() == date.getTime() });
+        return !!this.state.disabledDays.find(item => { return item.getTime() === date.getTime() });
     }
 
     onChange = date => {
